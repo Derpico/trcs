@@ -4,6 +4,7 @@ Nav Bar
 
 ul {
 	list-style-type: none;
+	width: 100%;
 	margin: 0;
 	padding: 0;
 	overflow: hidden;
@@ -106,6 +107,10 @@ Blog Page
 	text-align: center;
 }
 
+.flex-container a {
+	color: antiquewhite;
+}
+
 /*=========================
 Blog Article Layout
 ===========================*/
@@ -135,6 +140,63 @@ p {
 	text-indent: 30pt;
 	font-family: 'Russo One', sans-serif;
 }
+
+/*========================
+About Section
+==========================*/
+/*cards*/
+h2 {
+	text-align: center;
+	color: antiquewhite;
+	font-family: 'Russo One', sans-serif;
+}
+
+.flex-container p {
+	color: black;
+}
+.intro {
+	text-align: center;
+	width: 45%;
+	margin-left: 27%;
+	color: antiquewhite
+}
+.container {
+  padding: 2px 16px;
+}
+
+.w3-card, 
+.w3-card-2,
+.w3-card-3, 
+.w3-card-4 {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  width: 20%;
+	height: 10%;
+  text-align: center;
+  margin: auto;
+  background-color: white;
+  padding: auto;
+}
+
+.w3-card:hover,
+.w3-card-2:hover,
+.w3-card-3:hover,
+.w3-card-4:hover{
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.5);
+}
+
+.w3-card a, 
+.w3-card-2 a,
+.w3-card-3 a, 
+.w3-card-4 a {
+	color: black;
+	font-family: 'Russo One', sans-serif;
+}
+
+.w3-card-4 {
+	margin-bottom: 5em;
+}
+
 
 
 /*======================
