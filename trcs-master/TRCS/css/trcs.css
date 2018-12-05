@@ -1,0 +1,223 @@
+/*====================
+Nav Bar
+======================*/
+
+ul {
+    list-style-type: none;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    font-family: 'Russo One', sans-serif;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: antiquewhite;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+    background-color: #111;
+}
+/*======================
+Main Content
+========================*/
+body {
+    background: rgba(0, 35, 60, 0.6);
+    font-family: 'Russo One' sans-serif;
+}
+
+
+.main-face {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    width: 250px;
+    border-radius: 50%;
+}
+
+.main-logo {
+    display: block;
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.main p{
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Russo One', sans-serif;
+    color: antiquewhite;
+}
+
+.quote {
+    text-align: center;
+    font-size: 20px;
+    color: antiquewhite;
+}
+
+footer {
+    color: antiquewhite;
+    background-color: #333;
+    position: fixed;
+    bottom: 0;
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-top: 5em;
+}
+
+/*======================
+Blog Page
+========================*/
+.flex-container {
+    display: flex;
+    justify-content: center; /* align horizontal */
+    align-items: center; /* align vertical */
+    overflow: hidden;
+    color: antiquewhite;
+    font-family: 'Russo One', sans-serif;
+}
+
+.flex-item1 {
+    flex: 1;
+    text-align: center;
+}
+
+.flex-item2 {
+    flex: 2;
+    object-fit: cover;
+    object-position: center;
+}
+
+.flex-item2 img {
+    height: 100%;
+    width: 100%;
+}
+
+.flex-item2 h1 {
+    text-align: center;
+}
+
+.flex-item3 {
+    flex: 1;
+    text-align: center;
+}
+
+.flex-container a {
+    color: antiquewhite;
+}
+
+/*=========================
+Blog Article Layout
+===========================*/
+
+.flex-main{
+    justify-content: center;
+    font-family: 'Russo One', sans-serif;
+}
+
+.flex-main_title {
+    text-align: center;
+    color: antiquewhite;
+}
+
+.flex-main_content {
+    color: #535252;
+    background-color: #bababa;
+    flex: 1;
+    width: 50%;
+    text-align: left;
+    padding: 2em;
+    margin-left: 25%;
+}
+
+.flex-container {
+    display: flex;
+}
+
+.flex-item1,
+.flex-item2,
+.flex-item3 {
+    flex: 1;
+    font-family: 'Russo One', sans-serif;
+}
+
+p {
+    text-indent: 30pt;
+    font-family: 'Russo One', sans-serif;
+}
+
+/*========================
+About Section
+==========================*/
+/*cards*/
+h2 {
+    text-align: center;
+    color: antiquewhite;
+    font-family: 'Russo One', sans-serif;
+}
+
+.intro {
+    text-align: center;
+    width: 45%;
+    margin-left: 27%;
+    color: antiquewhite
+}
+
+.call-outs-container {
+    max-width: 1400px;
+    margin: 40px auto 0 auto;
+    color: antiquewhite;
+}
+
+.call-out {
+    background-color: #434343;
+    padding: 20px;
+    box-sizing: border-box;
+    margin-right: 40px;
+    margin-bottom: 20px;
+    flex-basis: 30%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+}
+
+.call-out:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.5);
+}
+
+.call-outs-container h4 {
+    text-align: center;
+    font-family: 'Russo one', sans-serif;
+}
+
+.call-out-img {
+    text-align: center;
+}
+
+
+/*======================
+Media Queries
+========================*/
+
+/*===About===*/
+@media (min-width: 900px) {
+  .call-outs-container {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.call-out:nth-child(1) {background-color: #434343;}
+.call-out:nth-child(2) {background-color: #434343;}
+.call-out:nth-child(3) {background-color: #434343;}
